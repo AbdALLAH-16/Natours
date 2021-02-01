@@ -1,3 +1,12 @@
+/*
+COLORS:
+Medium green: #55c57a
+Light green: #7ed56f
+Dark green: #28b485
+
+new-light: #5dfe60cc
+new-dark : #28d1accc
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -72,7 +81,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-image: linear-gradient(to right, #5dfe60cc, #28d1accc);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: .2rem;
@@ -197,7 +206,7 @@ body {
       .card__side--back-1 {
         background-image: linear-gradient(to bottom right, #ffb900, #ff7730); }
       .card__side--back-2 {
-        background-image: linear-gradient(to bottom right, #7ed56f, #28b485); }
+        background-image: linear-gradient(to bottom right, #5dfe60cc, #28d1accc); }
       .card__side--back-3 {
         background-image: linear-gradient(to bottom right, #2998ff, #5643fa); }
   .card:hover .card__side--front {
@@ -215,7 +224,7 @@ body {
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/nat-6.jpg); }
+      background-image: linear-gradient(to right bottom, #5dfe60cc, #28d1accc), url(../img/nat-6.jpg); }
     .card__picture--3 {
       background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7.jpg); }
   .card__heading {
@@ -235,7 +244,7 @@ body {
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
     .card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(93, 254, 96, 0.85), rgba(40, 209, 172, 0.85)); }
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
   .card__details {
@@ -306,11 +315,34 @@ body {
     font-size: 6rem;
     margin-bottom: .5rem;
     display: inline-block;
-    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    background-image: linear-gradient(to right, #5dfe60cc, #28d1accc);
     -webkit-background-clip: text;
     color: transparent; }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
+
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: 1.6rem;
+  transform: skewX(12deg); }
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(-12deg); }
+  .story__img {
+    height: 100%; }
+  .story__text {
+    transform: skewX(-12deg); }
 
 .row {
   max-width: 114rem;
@@ -340,7 +372,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(93, 254, 96, 0.8), rgba(40, 209, 172, 0.8)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -365,7 +397,7 @@ body {
   margin-top: -20vh; }
 
 .section-features {
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(93, 254, 96, 0.8), rgba(40, 209, 172, 0.8)), url(../img/nat-4.jpg);
   background-size: cover;
   padding: 20rem 0;
   transform: skewY(-7deg);
@@ -377,3 +409,7 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0 15rem 0;
   margin-top: -10rem; }
+
+.section-stories {
+  padding: 15rem 0;
+  background-color: #f7f7f7; }
