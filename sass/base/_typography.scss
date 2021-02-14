@@ -24,8 +24,8 @@ body {
         animation-timing-function: ease-out;
 
         @include respond(phone) {
+            font-size: 4rem;
             letter-spacing: 1rem;
-            font-size: 5rem;
         }
     }
 
@@ -34,12 +34,10 @@ body {
         font-size: 2rem;
         font-weight: 700;
         letter-spacing: 1.5rem;
-
-        animation-name: moveInRight;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
+        animation: moveInRight 1s ease-out;
 
         @include respond(phone) {
+            font-size: 1.5rem;
             letter-spacing: .5rem;
         }
     }

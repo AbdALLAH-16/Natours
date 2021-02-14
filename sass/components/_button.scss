@@ -11,13 +11,17 @@
         position: relative;
         font-size: $defualt-font-size;
 
+        @include respond(phone) {
+            font-size: 1.5rem;
+        }
+
         // change fro the <button> element
         border: none;
         cursor: pointer;
     }
 
     &:hover {
-        transform: translateY(-.3rem);
+        transform: translateY(-.3px);
         box-shadow: 0 1rem 2rem rgba($color-black, .2);
 
         &::after {
@@ -29,7 +33,7 @@
     &:active,
     &:focus {
         outline: none;
-        transform: translateY(-.1rem);
+        transform: translateY(-.1px);
         box-shadow: 0 .5rem 2rem rgba($color-black, .2);
     }
 
