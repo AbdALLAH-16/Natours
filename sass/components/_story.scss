@@ -38,6 +38,11 @@
 
         @include respond(phone) {
             transform: translateX(-3rem) skewX(0);
+            float: none;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1rem;
         }
     }
 
@@ -76,5 +81,9 @@
     &:hover &__img {
         transform: translateX(-4rem) scale(1);
         filter: blur(3px) brightness(80%);
+
+        @include respond(phone) {
+            transform: translateX(-3rem) scale(1);
+        }
     }
 }

@@ -1,4 +1,10 @@
 .form {
+    h2 {
+        @include respond(tab-port) {
+            font-size: 1.96rem;
+        }
+    }
+
     &__group:not(:last-child) {
         margin-bottom: 2rem;
     }

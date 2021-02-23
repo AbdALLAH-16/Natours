@@ -37,7 +37,7 @@ body {
         animation: moveInRight 1s ease-out;
 
         @include respond(phone) {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             letter-spacing: .5rem;
         }
     }
@@ -59,7 +59,7 @@ body {
     }
 
     @include respond(phone) {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     &:hover {
