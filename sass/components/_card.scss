@@ -174,7 +174,11 @@
 
         &:hover &__side--front {
             transform: rotateY(0);
-        }  
+        }
+
+        &__heading-span {
+            padding: 1rem 1rem;
+        }
 
         &__details {
             padding: 1rem 3rem;
