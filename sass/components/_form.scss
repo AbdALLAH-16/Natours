@@ -16,10 +16,6 @@
         display: block;
         transition: all .3s;
 
-        @include respond(tab-port) {
-            width: 100%;
-        }
-
         &:focus {
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-black, .1);
@@ -53,11 +49,6 @@
     &__radio-group {
         width: 49%;
         display: inline-block;
-
-        @include respond(tab-port) {
-            width: 100%;
-            margin-bottom: 2rem;
-        }
     }
 
     &__radio-input {
@@ -96,5 +87,35 @@
 
     &__radio-input:checked ~ &__radio-label &__radio-button::after {
         opacity: 1;
+    }
+
+    @media only screen and (max-width: 56.25em) {
+        .heading-secondary {
+            font-size: 1.49rem;
+        }
+        
+        &__input {
+            font-size: 1.25rem;
+            width: 100%;
+        }
+
+        &__radio-group {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        &__radio-label {
+            font-size: 1.4rem;
+        }
+
+        &__radio-button {
+            height: 2.5rem;
+            width: 2.5rem;
+    
+            &::after {
+                height: 1rem;
+                width: 1rem;
+            }
+        }
     }
 }
